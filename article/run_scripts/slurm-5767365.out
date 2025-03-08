@@ -1,0 +1,26 @@
+Starting job 5767365 on c14-7 on fram at Fri Apr 12 17:41:45 CEST 2024
+
+... Heatwave analysis done
+... Plotting done
+
+Job 5767365 consumed 9.0 billing hours from project nn9348k.
+
+Submitted 2024-04-12T17:41:25; waited 19.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 7.0 days
+Elapsed wallclock time:   16.9 minutes
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start   Elapsed  Exit status
+5767365          32            0.0 %  2024-04-12T17:41:44  1014.0 s  0
+5767365.batch    32      1     2.8 %  2024-04-12T17:41:44  1014.0 s  0
+
+Used CPU time:   15.3 CPU minutes
+Unused CPU time: 8.8 CPU hours
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+5767365          59.0        
+5767365.batch    59.0     1.2
+
+Job 5767365 completed at Fri Apr 12 17:58:38 CEST 2024

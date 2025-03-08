@@ -1,0 +1,57 @@
+Starting job 5767720 on c85-12 on fram at Sat Apr 13 13:00:40 CEST 2024
+
+Traceback (most recent call last):
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 209, in _acquire_with_cache_info
+    file = self._cache[self._key]
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/lru_cache.py", line 55, in __getitem__
+    value = self._cache[key]
+KeyError: [<class 'netCDF4._netCDF4.Dataset'>, ('/cluster/projects/nn9348k/Jakub/article/data/E_Asia/500hPa/7_Fourier/ds_HW_speed_Z500_GP1-7_5_days.nc',), 'a', (('clobber', True), ('diskless', False), ('format', 'NETCDF4'), ('persist', False)), 'db41b02c-d842-4e72-ad2a-d87b1b3b3c20']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/cluster/projects/nn9348k/Jakub/article/run_scripts/../4_ds_during_HW.py", line 51, in <module>
+    ds_speed_HW.to_netcdf(PATH_DATA + f'ds_HW_speed_Z{PRESS_LEVEL}_GP1-{N}_{TIME_WINDOW}_days.nc')
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/core/dataset.py", line 1903, in to_netcdf
+    return to_netcdf(  # type: ignore  # mypy cannot resolve the overloads:(
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/api.py", line 1213, in to_netcdf
+    store = store_open(target, mode, format, group, **kwargs)
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 376, in open
+    return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 323, in __init__
+    self.format = self.ds.data_model
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 385, in ds
+    return self._acquire()
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 379, in _acquire
+    with self._manager.acquire_context(needs_lock) as root:
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 197, in acquire_context
+    file, cached = self._acquire_with_cache_info(needs_lock)
+  File "/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 215, in _acquire_with_cache_info
+    file = self._opener(*self._args, **kwargs)
+  File "src/netCDF4/_netCDF4.pyx", line 2463, in netCDF4._netCDF4.Dataset.__init__
+  File "src/netCDF4/_netCDF4.pyx", line 2026, in netCDF4._netCDF4._ensure_nc_success
+PermissionError: [Errno 13] Permission denied: b'/cluster/projects/nn9348k/Jakub/article/data/E_Asia/500hPa/7_Fourier/ds_HW_speed_Z500_GP1-7_5_days.nc'
+
+Job 5767720 consumed 1.1 billing hours from project nn9348k.
+
+Submitted 2024-04-13T12:06:18; waited 54.4 minutes in the queue after becoming eligible to run.
+
+Requested wallclock time: 7.0 days
+Elapsed wallclock time:   2.1 minutes
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+5767720          32            0.0 %  2024-04-13T13:00:39  125.0 s  0
+5767720.batch    32      1     2.1 %  2024-04-13T13:00:39  125.0 s  0
+
+Used CPU time:   1.4 CPU minutes
+Unused CPU time: 1.1 CPU hours
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+5767720          59.0        
+5767720.batch    59.0     1.2
+
+Job 5767720 completed at Sat Apr 13 13:02:44 CEST 2024

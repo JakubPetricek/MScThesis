@@ -1,0 +1,2 @@
+things to test: 
+maybe somehow smoothen the speed ds - running mean or something

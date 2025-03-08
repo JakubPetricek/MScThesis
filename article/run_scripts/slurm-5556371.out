@@ -1,0 +1,25 @@
+Starting job 5556371 on c85-10 on fram at Tue Feb 6 16:25:24 CET 2024
+
+... Plotting done
+
+Job 5556371 consumed 6.4 billing hours from project nn9348k.
+
+Submitted 2024-02-06T16:24:58; waited 26.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 7.0 days
+Elapsed wallclock time:   11.9 minutes
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+5556371          32            0.0 %  2024-02-06T16:25:24  715.0 s  0
+5556371.batch    32      1     3.1 %  2024-02-06T16:25:24  715.0 s  0
+
+Used CPU time:   11.8 CPU minutes
+Unused CPU time: 6.2 CPU hours
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+5556371          59.0        
+5556371.batch    59.0     0.2
+
+Job 5556371 completed at Tue Feb 6 16:37:19 CET 2024

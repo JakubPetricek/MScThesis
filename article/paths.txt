@@ -1,0 +1,7 @@
+Absolute paths to useful data
+
+daily geopotential
+/nird/projects/NS9063K/from_stallo/era5/Pres/analysis/daily/Z
+
+daily temperature
+/nird/projects/NS9063K/from_stallo/era5/surface/analysis/daily/SAT

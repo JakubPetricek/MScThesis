@@ -1,0 +1,28 @@
+DONE:
+1. Load daily geopotential data (data/daily_Z), select a subset (35deg-65deg), make the data periodic (assert data(lon=180)==data(lon=-180))
+    --> ds_Z500_lon_extended.nc
+2. Approximate daily geopotential by a Fourier series with a selected number of terms ... calculate the Fourier coefficiens a_n, b_n
+    -->Z500_Fourier_coefficients1-7.nc
+3. Using the Fourier coefficiens, calculate GP1-7, the Fourier series up to the nth term (approximation to the original geopotential field)
+    --> ds_GP1-7.nc
+4. Calculate the daily PtP amplitude dataset
+    --> ds_ptp1-7.nc
+5. Calculate the daily speed dataset using the tracking algorithm
+    --> ds_speed1-7.nc
+    
+TODO:
+6. Calculate HWMID and select heatwave days using the daily temperature dataset
+    --> Q90.nc, Q25.nc, Q75.nc, ds_heatwave-days.nc
+
+That's all the necessary data for the analysis, then comes the result visualization.
+
+7. Compare old vs. new
+8. Compare heatwaves vs. no heatwaves
+9. Compare old heatwaves vs. new heatwaves
+...
+
+IDEA:
+The only input data necessary is the daily geopotential dataset and temperature dataset. 
+Create a series of scripts that take as their input some parameters (lat, lon, number of Fourier coeff...) and the input dataset.
+
+

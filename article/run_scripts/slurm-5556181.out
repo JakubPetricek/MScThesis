@@ -1,0 +1,34 @@
+Starting job 5556181 on c85-10 on fram at Tue Feb 6 15:06:42 CET 2024
+
+/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1583: RuntimeWarning: All-NaN slice encountered
+  result = np.apply_along_axis(_nanquantile_1d, axis, a, q,
+/cluster/projects/nn9348k/Jakub/env/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1583: RuntimeWarning: All-NaN slice encountered
+  result = np.apply_along_axis(_nanquantile_1d, axis, a, q,
+ ... Temperature analysis done
+ ... Fourier analysis done
+... Amplitude analysis done
+... Speed analysis done
+... Heatwave analysis done
+... Plotting done
+
+Job 5556181 consumed 37.4 billing hours from project nn9348k.
+
+Submitted 2024-02-06T15:06:40; waited 2.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 7.0 days
+Elapsed wallclock time:   1.2 hours
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+5556181          32            0.0 %  2024-02-06T15:06:42    1.2 h  0
+5556181.batch    32      1     3.4 %  2024-02-06T15:06:42    1.2 h  0
+
+Used CPU time:   1.3 CPU hours
+Unused CPU time: 1.5 CPU days
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+5556181          59.0        
+5556181.batch    59.0     6.5
+
+Job 5556181 completed at Tue Feb 6 16:16:52 CET 2024

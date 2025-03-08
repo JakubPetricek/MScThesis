@@ -1,0 +1,25 @@
+Starting job 5765488 on c82-2 on fram at Thu Apr 11 21:55:18 CEST 2024
+
+... Plotting done
+
+Job 5765488 consumed 6.6 billing hours from project nn9348k.
+
+Submitted 2024-04-11T21:55:18; waited 0.0 seconds in the queue after becoming eligible to run.
+
+Requested wallclock time: 7.0 days
+Elapsed wallclock time:   12.3 minutes
+
+Task and CPU statistics:
+ID             CPUs  Tasks  CPU util                Start  Elapsed  Exit status
+5765488          32            0.0 %  2024-04-11T21:55:18  741.0 s  0
+5765488.batch    32      1     3.0 %  2024-04-11T21:55:18  741.0 s  0
+
+Used CPU time:   11.7 CPU minutes
+Unused CPU time: 6.4 CPU hours
+
+Memory statistics, in GiB:
+ID              Alloc   Usage
+5765488          59.0        
+5765488.batch    59.0     0.2
+
+Job 5765488 completed at Thu Apr 11 22:07:40 CEST 2024

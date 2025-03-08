@@ -1,0 +1,6 @@
+{
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "jupyter.interactiveWindow.textEditor.executeSelection": true
+
+
+}
